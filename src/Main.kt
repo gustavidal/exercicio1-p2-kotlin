@@ -9,6 +9,7 @@ fun main() {
 //    - Se for múltiplo de 3, mostre “Batata”
 //    - Se for múltiplo de 5, mostre “Quente”
 //    - Se for múltiplo de 3 e 5, mostre “BatataQuente”
+    println("EXERCÍCIO 12")
     var lista = (1 .. 100).toList()
     for (i in lista) {
         val status = if (i % 15 == 0) {
@@ -20,14 +21,37 @@ fun main() {
         } else {""}
         println("$i = $status")
     }
+    println("")
 
 
 //    13 -) Dada uma lista de números, crie uma nova lista apenas com os ímpares
+    println("EXERCÍCIO 13")
+    var lista2 = (1 .. 100).toList()
+    val impares = lista2.filter { numero ->
+        numero % 2 == 1
+    }
+    println(impares)
+    println("")
+
 //    14 -) Dada uma lista de preços, calcule o total da compra
+    println("EXERCÍCIO 14")
+
 //    15 -) Dada uma lista de idades, calcule a média dos maiores de idade
+    println("EXERCÍCIO 15")
+
 //    16 -) Dada uma variável numérica, calcule o seu fatorial (ex: 5! = 5 * 4 * 3 * 2 * 1 = 120)
+    println("EXERCÍCIO 16")
+
 //    17 -) Crie um objeto “pessoa” com nome, idade e cidade, depois exiba uma frase com os dados do objeto por meio de um método: "Maria tem 25 anos e mora em São Paulo."
+    println("EXERCÍCIO 17")
+
 //    18 -) Crie um array de objetos representando produtos (nome, preço) e mostre o nome do produto mais caro
+    println("EXERCÍCIO 18")
+
 //    19 -) Crie uma classe “ContaBancaria” com os atributos “nomeTitular” e “saldo” (privado) e crie funções para depositar um valor, sacar um valor e para consultar o saldo
+    println("EXERCÍCIO 19")
+
 //    20 -) Crie uma classe “Funcionario” com “nome”, “salario” e uma função que retorne o salário, depois crie uma classe “Gerente” que herde “Funcionario” e sobrescreva a função que retorna o salário, retornando o salário com 20% de comissão (aumento)
+    println("EXERCÍCIO 20")
+
 }
