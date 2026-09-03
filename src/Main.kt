@@ -42,6 +42,13 @@ fun main() {
 
 //    15 -) Dada uma lista de idades, calcule a média dos maiores de idade
     println("EXERCÍCIO 15")
+    var idades = (13 .. 23).toList()
+    val maiorDeIdade = idades.filter { numero -> numero >= 18 }
+    val somaIdades = maiorDeIdade.reduce { acumulador, numero -> acumulador + numero }
+    val mediaIdades = somaIdades / maiorDeIdade.size
+    println(mediaIdades)
+    println("")
+
 
 //    16 -) Dada uma variável numérica, calcule o seu fatorial (ex: 5! = 5 * 4 * 3 * 2 * 1 = 120)
     println("EXERCÍCIO 16")
