@@ -1,3 +1,5 @@
+import model.Pessoa
+
 /*****************************************
  * Objetivo: Realizar exercícios de Kotlin
  * Data: 03/09/2026 (quinta-feira)
@@ -58,9 +60,13 @@ fun main() {
         numero--
     }
     println(resultado)
+    println("")
 
 //    17 -) Crie um objeto “pessoa” com nome, idade e cidade, depois exiba uma frase com os dados do objeto por meio de um método: "Maria tem 25 anos e mora em São Paulo."
     println("EXERCÍCIO 17")
+    val pessoa = Pessoa("Gustavo", 18, "Jandira")
+    pessoa.apresentar()
+    println("")
 
 //    18 -) Crie um array de objetos representando produtos (nome, preço) e mostre o nome do produto mais caro
     println("EXERCÍCIO 18")
