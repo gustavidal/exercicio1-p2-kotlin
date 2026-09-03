@@ -49,9 +49,15 @@ fun main() {
     println(mediaIdades)
     println("")
 
-
 //    16 -) Dada uma variável numérica, calcule o seu fatorial (ex: 5! = 5 * 4 * 3 * 2 * 1 = 120)
     println("EXERCÍCIO 16")
+    var numero = 5
+    var resultado = 1
+    while (numero > 1) {
+        resultado *= numero
+        numero--
+    }
+    println(resultado)
 
 //    17 -) Crie um objeto “pessoa” com nome, idade e cidade, depois exiba uma frase com os dados do objeto por meio de um método: "Maria tem 25 anos e mora em São Paulo."
     println("EXERCÍCIO 17")
