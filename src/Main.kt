@@ -35,6 +35,10 @@ fun main() {
 
 //    14 -) Dada uma lista de preços, calcule o total da compra
     println("EXERCÍCIO 14")
+    var precos = arrayOf(15, 30, 55, 50, 100)
+    val soma = precos.reduce { acumulador, numero -> acumulador + numero }
+    println(soma)
+    println("")
 
 //    15 -) Dada uma lista de idades, calcule a média dos maiores de idade
     println("EXERCÍCIO 15")
