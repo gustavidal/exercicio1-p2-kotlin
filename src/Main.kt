@@ -70,6 +70,14 @@ fun main() {
 
 //    18 -) Crie um array de objetos representando produtos (nome, preço) e mostre o nome do produto mais caro
     println("EXERCÍCIO 18")
+    val produtos = mutableListOf(
+        "Desinfetante" to 9.99,
+        "Nescau" to 11.99,
+        "Pão" to 1.0
+    )
+    val produtoMaisCaro = produtos.maxByOrNull { it.second } // O maxByOrNull busca o objeto inteiro com base no maior preço (second)
+    println("O produto mais caro é: ${produtoMaisCaro?.first}") // Mostramos o nome (first) do produto encontrado
+    println("")
 
 //    19 -) Crie uma classe “ContaBancaria” com os atributos “nomeTitular” e “saldo” (privado) e crie funções para depositar um valor, sacar um valor e para consultar o saldo
     println("EXERCÍCIO 19")
