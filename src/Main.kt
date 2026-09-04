@@ -1,3 +1,4 @@
+import model.ContaBancaria
 import model.Pessoa
 
 /*****************************************
@@ -81,6 +82,10 @@ fun main() {
 
 //    19 -) Crie uma classe “ContaBancaria” com os atributos “nomeTitular” e “saldo” (privado) e crie funções para depositar um valor, sacar um valor e para consultar o saldo
     println("EXERCÍCIO 19")
+    val contaBancaria = ContaBancaria()
+    println(contaBancaria.depositar(20000.0))
+    println(contaBancaria.sacar(2000.0))
+    println("")
 
 //    20 -) Crie uma classe “Funcionario” com “nome”, “salario” e uma função que retorne o salário, depois crie uma classe “Gerente” que herde “Funcionario” e sobrescreva a função que retorna o salário, retornando o salário com 20% de comissão (aumento)
     println("EXERCÍCIO 20")
